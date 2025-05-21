@@ -20,11 +20,11 @@ const db = mysql.createConnection({
     //user: 'root',        // Usuario 
     //password: '',        // Sin contraseña
     //database: 'agencia_autos'
-    host: 'turntable.proxy.rlwy.net',
+    host: 'caboose.proxy.rlwy.net',
     user: 'root',
-    password: 'nGBAxsZjaakVWoiMusbVjrUYOVaFNHSm',
+    password: 'wvBaOnfBvOArgqVmEIBudbOWakaSvndF',
     database: 'railway',
-    port: 15292
+    port: 20893
 });
 
 db.connect(err => {
