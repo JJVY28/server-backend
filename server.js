@@ -16,10 +16,15 @@ app.use(express.static(__dirname, {
 
 // Configura conexión MySQL
 const db = mysql.createConnection({
-    host: 'localhost',  //  local
-    user: 'root',        // Usuario 
-    password: '',        // Sin contraseña
-    database: 'agencia_autos'
+   // host: 'localhost',  //  local
+    //user: 'root',        // Usuario 
+    //password: '',        // Sin contraseña
+    //database: 'agencia_autos'
+    host: 'turntable.proxy.rlwy.net',
+    user: 'root',
+    password: 'nGBAxsZjaakVWoiMusbVjrUYOVaFNHSm',
+    database: 'railway',
+    port: 15292
 });
 
 db.connect(err => {
@@ -27,7 +32,7 @@ db.connect(err => {
         console.error('Error conectando a MySQL:', err);
         process.exit(1);
     }
-    console.log('Conectado a la base de datos MySQL');
+    console.log('Conectado a Railway!');//('Conectado a la base de datos MySQL');
 });
 
 // Obtener todos los clientes
